@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.media.MediaView?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+
+<AnchorPane prefHeight="550.0" prefWidth="700.0" style="-fx-background-color: #567b9d;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.SQL.ProyectoVivero.View.VideoController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="483.0" layoutX="31.0" layoutY="26.0" stroke="#a7ffaa" strokeType="INSIDE" style="-fx-fill: #12b187;" width="639.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.28095238095238095" startY="1.0">
+               <stops>
+                  <Stop color="#a7ffaae0" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <MediaView fx:id="media" fitHeight="380.0" fitWidth="570.0" layoutX="65.0" layoutY="78.0" />
+      <ImageView fx:id="imgAtras" fitHeight="45.0" fitWidth="45.0" layoutX="31.0" layoutY="26.0" onMouseClicked="#clickAtras">
+         <image>
+            <Image url="@../../../../imagen/atras.png" />
+         </image>
+      </ImageView>
+      <HBox layoutX="290.0" layoutY="464.0" prefHeight="45.0" prefWidth="121.0" spacing="30.0">
+         <children>
+            <ImageView fx:id="play" fitHeight="52.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../imagen/play-button.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="pause" fitHeight="45.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../imagen/pause.png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

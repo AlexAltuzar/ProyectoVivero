@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="600.0" style="-fx-background-color: #2ca96c;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.SQL.ProyectoVivero.View.RegistroFotosController">
+   <children>
+      <AnchorPane prefHeight="25.0" prefWidth="693.0" style="-fx-background-color: #61c4e4;">
+         <children>
+            <Label layoutX="236.0" layoutY="-1.0" text="Historial de Fotografias">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <HBox layoutX="32.0" layoutY="448.0" prefHeight="38.0" prefWidth="630.0" spacing="50.0">
+         <children>
+            <Label prefHeight="21.0" prefWidth="91.0" text="Producto">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <ChoiceBox fx:id="chBox_Tipo" prefHeight="25.0" prefWidth="125.0" />
+            <Button fx:id="btnAgregar" mnemonicParsing="false" onAction="#clickAgregar" prefHeight="39.0" prefWidth="89.0" style="-fx-background-color: #61c4e4;" text="Agregar">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Button>
+            <Button fx:id="btnModificar" mnemonicParsing="false" onAction="#clickModificar" prefHeight="39.0" prefWidth="85.0" style="-fx-background-color: #61c4e4;" text="Modificar">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Button>
+            <Button fx:id="btnBorrar" mnemonicParsing="false" onAction="#clickBorrar" prefHeight="38.0" prefWidth="71.0" style="-fx-background-color: #61c4e4;" text="Borrar">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Button>
+         </children>
+      </HBox>
+      <ImageView fx:id="imgAtras" fitHeight="45.0" fitWidth="45.0" layoutY="29.0" onMouseClicked="#clickAtras">
+         <image>
+            <Image url="@../../../../imagen/atras.png" />
+         </image>
+      </ImageView>
+      <BorderPane fx:id="root" layoutX="47.0" layoutY="75.0" prefHeight="350.0" prefWidth="600.0" />
+   </children>
+</AnchorPane>

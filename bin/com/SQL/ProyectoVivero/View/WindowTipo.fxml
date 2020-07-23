@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="150.0" prefWidth="350.0" style="-fx-background-color: #2ca96c;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.SQL.ProyectoVivero.View.TipoController">
+   <children>
+      <HBox layoutX="25.0" layoutY="56.0" prefHeight="25.0" prefWidth="301.0" spacing="20.0">
+         <children>
+            <Label prefHeight="21.0" prefWidth="139.0" text="Tipo del producto">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txFTipo" prefHeight="25.0" prefWidth="146.0" />
+         </children>
+      </HBox>
+      <AnchorPane layoutX="-1.0" layoutY="-1.0" prefHeight="25.0" prefWidth="351.0" style="-fx-background-color: #61c4e4;">
+         <children>
+            <Label fx:id="lbTittle" layoutX="-1.0" layoutY="-1.0" prefHeight="31.0" prefWidth="354.0">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <HBox layoutX="149.0" layoutY="105.0" prefHeight="31.0" prefWidth="177.0" spacing="20.0">
+         <children>
+            <Button fx:id="btnCancelar" mnemonicParsing="false" onAction="#clickCancelar" prefHeight="36.0" prefWidth="88.0" style="-fx-background-color: #61c4e4;" text="Cancelar">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnAceptar" mnemonicParsing="false" onAction="#clickAceptar" prefHeight="33.0" prefWidth="83.0" style="-fx-background-color: #61c4e4;" text="Aceptar">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

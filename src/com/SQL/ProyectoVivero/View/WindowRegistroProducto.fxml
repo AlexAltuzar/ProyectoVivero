@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #2ca96c;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.SQL.ProyectoVivero.View.RegistroProductoController">
+   <children>
+      <TableView fx:id="tableProducto" layoutX="47.0" layoutY="80.0" prefHeight="241.0" prefWidth="607.0" style="-fx-background-color: #61c4e4;">
+        <columns>
+          <TableColumn fx:id="columnId" prefWidth="49.0" text="ID" />
+          <TableColumn fx:id="columnNombre" prefWidth="186.0" text="NOMBRE" />
+            <TableColumn fx:id="columnTipo" prefWidth="114.0" text="TIPO" />
+            <TableColumn fx:id="columnCondicion" prefWidth="146.0" text="CONDICIÓN" />
+            <TableColumn fx:id="columnFecha" prefWidth="111.0" text="FECHA_INGRESO" />
+        </columns>
+      </TableView>
+      <HBox layoutX="99.0" layoutY="356.0" prefHeight="30.0" prefWidth="504.0" spacing="60.0">
+         <children>
+            <Button fx:id="btnVer" mnemonicParsing="false" onAction="#clickVer" prefHeight="41.0" prefWidth="76.0" style="-fx-background-color: #61c4e4;" text="Ver">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Button>
+            <Button fx:id="btnAgregar" graphicTextGap="10.0" mnemonicParsing="false" onAction="#clickAgregar" prefHeight="43.0" prefWidth="81.0" style="-fx-background-color: #61c4e4;" text="Agregar">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Button>
+            <Button fx:id="btnModificar" graphicTextGap="0.0" mnemonicParsing="false" onAction="#clickModificar" prefHeight="56.0" prefWidth="98.0" style="-fx-background-color: #61c4e4;" text="Modificar">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Button>
+            <Button fx:id="btnBorrar" graphicTextGap="0.0" mnemonicParsing="false" onAction="#clickBorrar" prefHeight="40.0" prefWidth="72.0" style="-fx-background-color: #61c4e4;" text="Borrar">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Button>
+         </children>
+      </HBox>
+      <AnchorPane prefHeight="25.0" prefWidth="700.0" style="-fx-background-color: #61c4e4;">
+         <children>
+            <Label layoutX="290.0" layoutY="-1.0" text="PRODUCTOS">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <ImageView fx:id="imgAtras" fitHeight="45.0" fitWidth="45.0" layoutY="29.0" onMouseClicked="#clickAtras">
+         <image>
+            <Image url="@../../../../imagen/atras.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
